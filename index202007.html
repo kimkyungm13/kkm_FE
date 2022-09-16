@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <title>Kobiznet</title>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+        <!-- Bootstrap Icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
+
+        <!-- SimpleLightbox plugin CSS-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+        
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <link href="slick/slick.css" rel="stylesheet"/>
+        <link href="slick/slick-theme.css" rel="stylesheet"/>
+        <!--Google Material Icons-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+        <script type="text/javascript" src="slick/slick.min.js"></script>
+        <!-- AOS 라이브러리 불러오기-->
+        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"> 
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+        <script src="js/includeHTML.js"></script>
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <!--<div include-html="nav.html"></div>-->
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+            <div class="container px-lg-0">
+                <a class="navbar-brand" href="index.html"><img class="logo_white" src="img/logo.png"><img class="logo_black" src="img/logo_bk.png"></a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="siteinfo">
+                <a class="btn btn-primary btn-sm mx-4 px-3" href="login.html">로그인</a>
+                    <div class="btn-group">
+                        <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Language
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li>KOREAN</li>
+                          <li>ENGLISH</li>
+                          <li>VIETNAM</li>
+                        </ul>
+                      </div>
+                      <a class="px-3 sitemap" data-bs-toggle="modal" data-bs-target="#sitemap" href="#"><i class="fa fs-3 fa-solid fa-bars"></i></a>
+                    </div>      
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <div class="top-bar text-align-center line-height-0-ch-only">
+                    <nav class="menu-box-1 inline-block">
+                    <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="sub01_01.html">회사소개</a>
+                            <ul class="menu-2dep list-unstyled">
+                                <li><a href="#"><span>회장인사말</span></a></li>
+                                <li><a href="#"><span>회장 경영이념</span></a></li>
+                                <li><a href="#"><span>회사개요</span></a></li>
+                                <li><a href="#"><span>연혁</span></a></li> 
+                                <li><a href="#"><span>사업실적</span></a></li> 
+                                <li><a href="#"><span>조직도</span></a></li> 
+                                <li><a href="#"><span>오시는길</span></a></li> 
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="sub02_01.html">주요제품</a>
+                             <ul class="menu-2dep list-unstyled">
+                                <li><a href="#"><span>G-SABIS [국제물류 ERP]</span></a></li>
+                                <li><a href="#"><span>WIN-SABIS [국제물류 ERP]</span></a></li>
+                                <li><a href="#"><span>G-WMS [창고관리 ERP]</span></a></li>
+                                <li><a href="#"><span>BIZ-WEBPY [홈페이지 빌더]</span></a></li> 
+                                <li><a href="#"><span>FNC [물류네트워크센터]</span></a></li> 
+                                <li><a href="#"><span>LEADER'S BILL [전자세금계산서]</span></a></li> 
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="sub03_01.html">홍보센터</a>
+                         <ul class="menu-2dep list-unstyled">
+                                <li><a href="#"><span>회사종합현황</span></a></li>
+                                <li><a href="#"><span>수상내역</span></a></li>
+                                <li><a href="#"><span>보유지적재산권</span></a></li> 
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="sub03_01.html">고객지원</a>
+                            <ul class="menu-2dep list-unstyled">
+                                <li><a href="#"><span>공지사항</span></a></li>
+                                <li><a href="#"><span>문의</span></a></li>
+                                <li><a href="#"><span>Media</span></a></li>
+                                <li><a href="#"><span>Newsletter</span></a></li> 
+                            </ul>
+                        </li>
+                       
+                    </ul>
+                </nav>
+                
+            </div>
+            <div class="menu-box-1-bg"></div>
+    <div class="sub-menu-bar-bg"></div>
+                    </div>
+                    
+                </div> 
+            </div>
+        </nav>
+        <div class="modal" tabindex="-1" id="sitemap">
+            <div class="modal-dialog modal-fullscreen">
+              <div class="modal-content">
+                <div class="modal-header">
+                  
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body sitemap_wrap">
+                    <ul class="d-flex justify-content-between container list-unstyled">
+                        <li><h2>회사소개</h2>
+                            <ul class="sitemap-2dep list-unstyled">
+                                <li><a href="#"><span>회장인사말</span></a></li>
+                                <li><a href="#"><span>회장 경영이념</span></a></li>
+                                <li><a href="#"><span>회사개요</span></a></li>
+                                <li><a href="#"><span>연혁</span></a></li> 
+                                <li><a href="#"><span>사업실적</span></a></li> 
+                                <li><a href="#"><span>조직도</span></a></li> 
+                                <li><a href="#"><span>오시는길</span></a></li> 
+                            </ul>
+                        </li>
+                        <li><h2>주요제품</h2>
+                            <ul class="sitemap-2dep list-unstyled">
+                                <li><a href="#"><span>G-SABIS [국제물류 ERP]</span></a></li>
+                                <li><a href="#"><span>WIN-SABIS [국제물류 ERP]</span></a></li>
+                                <li><a href="#"><span>G-WMS [창고관리 ERP]</span></a></li>
+                                <li><a href="#"><span>BIZ-WEBPY [홈페이지 빌더]</span></a></li> 
+                                <li><a href="#"><span>FNC [물류네트워크센터]</span></a></li> 
+                                <li><a href="#"><span>LEADER'S BILL [전자세금계산서]</span></a></li> 
+                            </ul>
+                        </li>
+                        <li><h2>홍보센터</h2>
+                            <ul class="sitemap-2dep list-unstyled">
+                                <li><a href="#"><span>회사종합현황</span></a></li>
+                                <li><a href="#"><span>수상내역</span></a></li>
+                                <li><a href="#"><span>보유지적재산권</span></a></li> 
+                            </ul>
+                        </li>
+                        <li><h2>고객지원</h2>
+                            <ul class="sitemap-2dep list-unstyled">
+                                <li><a href="#"><span>공지사항</span></a></li>
+                                <li><a href="#"><span>문의</span></a></li>
+                                <li><a href="#"><span>Media</span></a></li>
+                                <li><a href="#"><span>Newsletter</span></a></li> 
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal" tabindex="-1" id="contact_pop">
+            <div class="modal-dialog modal-dialog modal-xl">
+              <div class="modal-content" id="contact">
+                
+                  
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               
+                <div class="modal-body sitemap_wrap" >
+                    <section class="page-section" >
+
+                        <div class="container px-4 px-lg-0">
+                            <div class="row gx-4 gx-lg-5">
+                                <div class="col-lg-8 col-xl-6">
+                                    <h2 class="mt-0 text-white">온라인문의를 통해 <br>
+                                        간편하게 문의해보세요.</h2>
+                                </div>
+                                <div class="col-lg-6">
+                                    <!-- * * * * * * * * * * * * * * *-->
+                                    <!-- * * SB Forms Contact Form * *-->
+                                    <!-- * * * * * * * * * * * * * * *-->
+                                    <!-- This form is pre-integrated with SB Forms.-->
+                                    <!-- To make this form functional, sign up at-->
+                                    <!-- https://startbootstrap.com/solution/contact-forms-->
+                                    <!-- to get an API token!-->
+                                    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                                        <!-- Name input-->
+                                        <div class="form-floating mb-3">
+                                            <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                                            <label for="name">Full name</label>
+                                            <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                                        </div>
+                                        <!-- Email address input-->
+                                        <div class="form-floating mb-3">
+                                            <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                                            <label for="email">Email address</label>
+                                            <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                                            <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                                        </div>
+                                        <!-- Phone number input-->
+                                        <div class="form-floating mb-3">
+                                            <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
+                                            <label for="phone">Phone number</label>
+                                            <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                                        </div>
+                                        <!-- Message input-->
+                                        <div class="form-floating mb-3">
+                                            <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+                                            <label for="message">Message</label>
+                                            <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                                        </div>
+                                        <!-- Submit success message-->
+                                        <!---->
+                                        <!-- This is what your users will see when the form-->
+                                        <!-- has successfully submitted-->
+                                        <div class="d-none" id="submitSuccessMessage">
+                                            <div class="text-center mb-3">
+                                                <div class="fw-bolder">Form submission successful!</div>
+                                                To activate this form, sign up at
+                                                <br />
+                                                <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                                            </div>
+                                        </div>
+                                        <!-- Submit error message-->
+                                        <!---->
+                                        <!-- This is what your users will see when there is-->
+                                        <!-- an error submitting the form-->
+                                        <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                                        <!-- Submit Button-->
+                                        <div class="d-grid"><button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Submit</button></div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </section>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container px-lg-0 h-100">
+                <div class="row gx-4 gx-lg-5 h-100 align-items-center" style="position:relative;z-index: 1;">
+                    <div class="col-lg-8 align-self-end subTit" data-aos="fade-down" data-aos-duration="1000">
+                        <h2 class="text-white">대한민국 포워딩업계 점유율 1위</h2>
+                    </div>
+                    <div class="col-lg-8 align-self-baseline mainTit" data-aos="fade-down" data-aos-duration="1000">
+                        <h1>한국비즈넷</h1>
+                        <h2 class="text-white">30여년간 복합 운송 프로그램만을 고집해온 전문회사<br>
+                            (주)한국비즈넷이 글로벌 통합 물류의 새 길을 열어드리겠습니다.</h2>
+                    </div>
+                    
+                </div>
+                <div class="bg_asset" data-aos="fade-down" data-aos-duration="3000" data-aos-easing="ease-out-quart">
+                    <img src="img/main_bg_asset.png">
+                </div>
+            </div>
+        </header>
+        <!-- About-->
+        <section class="page-section bg-white" id="about">
+            <div class="container px-lg-0">
+                <div class="row gx-4 gx-lg-5 justify-content-end">
+                    <div class="col-lg-7 px-0 word" >
+                        <h2 class="fw-bold"data-aos="fade-down" data-aos-duration="1000">고객과 함께 앞으로 더 나은<br> 
+                            도약을 꿈꾸는 기업</h2>
+                        
+                        <p class="mb-4" data-aos="fade-down" data-aos-duration="1000">변화하지 않으면 존립할 수 없다는 지극히 단순한 명제와 더불어 이것을 실행하기 위한 소신<br>
+                            (주)한국비즈넷의 기업 철학입니다.</p>
+                        <ul class="col-lg-9 company-icon list-unstyled">
+                            <li class="ico_com" data-aos="flip-down" data-aos-duration="1000"><a href="#" class=""><span class=""></span>CEO 인사말</a></li>
+                            <li class="ico_com" data-aos="flip-up" data-aos-duration="1000"><a href="#" class="">경영이념</a></li>
+                            <li class="ico_com" data-aos="flip-down" data-aos-duration="1000"><a href="#" class="">회사개요</a></li>
+                            <li class="ico_com" data-aos="flip-up" data-aos-duration="1000"><a href="#" class="">주요제품</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Services-->
+        <section class="page-section bg-light" id="services">
+            <div class="container px-lg-0">
+                <div class="row">
+                    <div class="col-lg-5 infoTit mt-4" data-aos="zoom-in-up" data-aos-duration="1000">
+                        <h1 class="mt-0">SERVICES</h1>
+                        <h3>화주와 포더워를 위한 서비스를 개발함으로써<br>
+                            항상 앞서가는 선도기업으로 인정받는 기업</h3>
+                    </div>
+                    <div class="col-lg-7 info">
+                        <div class="product p-5" data-aos="zoom-in-up" data-aos-duration="1000">
+                            <h1>MAIN PRODUCT</h1>
+                            <P>한국비즈넷은 물류 통합관리 시스템, 통합 창고 관리 시스템, 물류네트워크센터를 제공합니다.</P>
+                            <div class="slider-wrap single-item">
+                                <div class="slide sl01">
+                                    <h2>G-SABIS(국제 물류 ERP)</h2>
+                                    <p>클라우드 기반으로 더욱 강력해진 네트워킹 서비스 제공,<br>
+                                        국가별 업무 특성에 최적화 된 글로벌 시스템</p>
+                                    <a href="">자세히 보기</a>
+                                </div>
+                                <div class="slide sl02">
+                                    <h2>G-WMS(통합 창고 ERP)</h2>
+                                    <p>클라우드 기반으로 더욱 강력해진 네트워킹 서비스 제공,<br>
+                                        국가별 업무 특성에 최적화 된 글로벌 시스템</p>
+                                    <a href="">자세히 보기</a>
+                                </div>
+                                <div class="slide">3</div>
+                                <div class="slide">4</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <!-- Portfolio-->
+        <section class="page-section" id="portfolio">
+            <div class="container px-4 px-lg-0" data-aos="fade-down" data-aos-duration="2000" data-aos-easing="ease-out-quart">
+                <ul class="list-unstyled ppt_icon">
+                    <li>국가별 환경지원</li>
+                    <li>물류 통합 <br>관리 시스템</li>
+                    <li>보안관리</li>
+                    <li>글로벌 경영 관리</li>
+                    <li>클라우드 기반 <br>네트워킹 서비스</li>
+                    <li>통합실적관리</li>
+                </ul>
+            </div>
+        </section>
+            <!-- Contact
+        <section class="page-section" id="contact">
+
+            <div class="container px-4 px-lg-0">
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-lg-8 col-xl-6">
+                        <h2 class="mt-0 text-white">온라인문의를 통해 <br>
+                            간편하게 문의해보세요.</h2>
+                    </div>
+                    <div class="col-lg-6">
+                        <!-- * * * * * * * * * * * * * * *-->
+                        <!-- * * SB Forms Contact Form * *-->
+                        <!-- * * * * * * * * * * * * * * *-->
+                        <!-- This form is pre-integrated with SB Forms.-->
+                        <!-- To make this form functional, sign up at-->
+                        <!-- https://startbootstrap.com/solution/contact-forms-->
+                        <!-- to get an API token!
+                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                            <!-- Name input
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                                <label for="name">Full name</label>
+                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                            </div>
+                            <!-- Email address input
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                                <label for="email">Email address</label>
+                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                            </div>
+                            <!-- Phone number input
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
+                                <label for="phone">Phone number</label>
+                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                            </div>
+                            <!-- Message input
+                            <div class="form-floating mb-3">
+                                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+                                <label for="message">Message</label>
+                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                            </div>
+                            <!-- Submit success message-->
+                            <!---->
+                            <!-- This is what your users will see when the form-->
+                            <!-- has successfully submitted
+                            <div class="d-none" id="submitSuccessMessage">
+                                <div class="text-center mb-3">
+                                    <div class="fw-bolder">Form submission successful!</div>
+                                    To activate this form, sign up at
+                                    <br />
+                                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                                </div>
+                            </div>
+                            <!-- Submit error message-->
+                            <!---->
+                            <!-- This is what your users will see when there is-->
+                            <!-- an error submitting the form
+                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                            <!-- Submit Button
+                            <div class="d-grid"><button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Submit</button></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>-->
+        <!-- Footer-->
+        <div include-html="footer.html"></div>
+        
+        <div class="sticky-sm-bottom">
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <a class="btn btn-warning me-md-2 rounded-circle m-2 fixed_btn" data-bs-toggle="modal" data-bs-target="#contact_pop">상담<br>문의</a>
+              </div>
+        </div>
+        
+        
+        <script>
+          $(function(){
+    $('.slider-wrap').slick({
+      slide: 'div',        //슬라이드 되어야 할 태그
+      infinite : true,     //무한 반복 옵션     
+      slidesToShow : 1,        // 한 화면에 보여질 컨텐츠 개수
+      slidesToScroll : 1,        //스크롤 한번에 움직일 컨텐츠 개수
+      speed : 500,     // 다음 버튼 누르고 다음 화면 뜨는데까지 걸리는 시간(ms)
+      arrows : true,         // 옆으로 이동하는 화살표 표시 여부
+      dots : true,         // 스크롤바 아래 점으로 페이지네이션 여부
+      autoplay : true,            // 자동 스크롤 사용 여부
+      autoplaySpeed : 2000,         // 자동 스크롤 시 다음으로 넘어가는데 걸리는 시간 (ms)
+      pauseOnHover : true,        // 슬라이드 이동    시 마우스 호버하면 슬라이더 멈추게 설정
+      vertical : false,        // 세로 방향 슬라이드 옵션
+      prevArrow : "<button type='button' class='slick-prev'>ggg</button>",
+      nextArrow : "<button type='button' class='slick-next'>Next</button>",
+      draggable : true     //드래그 가능 여부 
+      /*responsive: [ // 반응형 웹 구현 옵션
+        {  
+          breakpoint: 960, //화면 사이즈 960px
+          settings: {
+            slidesToShow: 4
+          } 
+        },
+        { 
+          breakpoint: 768, //화면 사이즈 768px
+          settings: {    
+            slidesToShow: 5
+          } 
+        }
+      ]*/
+
+    });
+})
+        </script>
+       <script>
+        function slideUp() {
+    settings();
+    if (!isNavOpen && !isSearchOpen) {
+      $('.sub-menu-bar-bg, .menu-2dep').stop().slideUp(300);
+    }
+  }
+
+  function slideDown() {
+    settings();
+    if (!isNavOpen && !isSearchOpen) {
+      $('.sub-menu-bar-bg, .menu-2dep').stop().slideDown(300);
+    }
+  }
+  function init() {
+    settings();
+    event(".sub-menu-bar-bg", "mouseleave", slideUp);
+    event(".sub-menu-bar-bg", "mouseenter", slideDown);
+    event(".btnPcNav", "click", stickyMenu);
+    event(".btn-search-m, .btnSearch.call", "click", setSearchOpen);
+    event(".btnSearchClose, .searchCloseBtn", "click", setSearchClose);
+    event(".open-nav-wrap .has-sub", "click", subMenuAccordion);
+    event("window", "onresize", subMenuAccordion);
+    navScrollLitsener();
+  }
+
+        </script>
+        <script> 
+            AOS.init(); // 자바스크립트로 init()을 해야 동작한다.
+        </script>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- SimpleLightbox plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <script>includeHTML();</script>
+    </body>
+</html>

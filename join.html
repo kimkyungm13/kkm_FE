@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <title>Kobiznet</title>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+        <!-- Bootstrap Icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
+
+        <!-- SimpleLightbox plugin CSS-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+        
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <link href="slick/slick.css" rel="stylesheet"/>
+        <link href="slick/slick-theme.css" rel="stylesheet"/>
+         
+        <script type="text/javascript" src="slick/slick.min.js"></script>
+        <!-- AOS 라이브러리 불러오기-->
+        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"> 
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+        <!-- Font Awesome -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.2.0/mdb.min.css"
+rel="stylesheet"
+/>
+<script src="js/includeHTML.js"></script>
+
+        <style>
+            .divider:after,
+.divider:before {
+content: "";
+flex: 1;
+height: 1px;
+background: #eee;
+}
+.h-custom {
+height: calc(100% - 73px);
+}
+@media (max-width: 450px) {
+.h-custom {
+height: 100%;
+}
+}
+        </style>
+    </head>
+<body>
+
+
+    <div class="newMemberWrap">
+        <div class="nmHeader">
+            <h1><a href="index.html"><img src="./img/logo_bk.png" alt="한국비즈넷"></a></h1>
+        </div>
+
+        
+
+
+
+
+<div id="nmContainer" class="nmContainer">
+    <div class="nmTit">
+        <h2>회원가입</h2>
+    </div>
+
+    <div class="nmCont">
+        <h3 class="nmSubTit">정보 입력</h3>
+
+        <form id="customerForm" method="POST">
+            <div class="nmFormWrap">
+                <input type="hidden" name="type" value="01">
+                <input type="hidden" name="token" value="kTXOoGQnr11AWKnogirFvWOt47pFwyD3LnEZ7gR%2Fn%2Bphn58TW7FidTVd6kxHGmPX">
+                <input type="hidden" name="privacyAgreement" value="Y">
+                <input type="hidden" name="termsAgreement" value="Y">
+                <table class="nmForm">
+                    
+                    <tbody>
+                    <tr>
+                        <th scope="row"><label for="authenticatedEmail">아이디</label></th>
+                        <td>
+                            <input type="text" class="inputTxt" id="authenticatedEmail">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><label for="customerName">이름</label></th>
+                        <td>
+                            <input type="text" class="inputTxt" id="customerName" name="customerName" maxlength="20">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><label for="cell1">휴대전화 번호</label></th>
+                        <td class="inpNum3">
+                            <span class="select">
+                                <select id="cell1" name="cell1" title="휴대전화 앞 3~4자리">
+<option value="">선택</option><option value="010">010</option>
+<option value="011">011</option>
+<option value="016">016</option>
+<option value="017">017</option>
+<option value="018">018</option>
+<option value="019">019</option>
+</select>
+
+                            </span>
+                            <span class="dash">-</span>
+                            <input type="tel" class="inputTxt" title="휴대전화 번호 가운데 3~4자리" maxlength="4" id="cell2" name="cell2">
+                            <span class="dash">-</span>
+                            <input type="tel" class="inputTxt" title="휴대전화 번호 끝 4자리" maxlength="4" id="cell3" name="cell3">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><label for="birthday">생년월일</label></th>
+                        <td>
+                            <input type="text" id="birthday" name="birthday" title="생년월일" class="inputTxt" maxlength="10" placeholder="YYYY-MM-DD" autocomplete="off">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <label for="password">비밀번호</label> 
+                        </th>
+                        <td>
+                            <input type="password" class="inputTxt" id="password" name="password" onkeyup="eventObj.togglePasswordMsg(event)" placeholder="영문, 숫자, 특수문자 조합 8~16자리" maxlength="16" autocomplete="false">
+                            <span class="nmAlertIco warn1" id="safePasswordMsg" style="display:none">안전</span>
+                            <span class="nmAlertIco warn2" id="normalPasswordMsg" style="display:none">보통</span>
+                            <span class="nmAlertIco warn3" id="dangerPasswordMsg" style="display:none">취약</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><label for="retypePassword">비밀번호 확인</label></th>
+                        <td>
+                            <input type="password" class="inputTxt" id="retypePassword" name="retypePassword" onkeyup="eventObj.toggleRetypeErrMsg(event)" placeholder="동일한 비밀번호 입력" maxlength="16" autocomplete="false">
+                            <p class="nmAlert" id="retypeErrMessage" style="display:none">비밀번호가 서로 일치하지 않습니다.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><label for="tel1">일반전화 번호(선택)</label></th>
+                        <td class="inpNum3">
+                            <span class="select">
+                                <select id="tel1" name="tel1" title="일반전화 번호 앞 3~4자리">
+<option value="">선택</option><option value="02">02</option>
+<option value="031">031</option>
+<option value="032">032</option>
+<option value="033">033</option>
+<option value="041">041</option>
+<option value="042">042</option>
+<option value="043">043</option>
+<option value="044">044</option>
+<option value="051">051</option>
+<option value="052">052</option>
+<option value="053">053</option>
+<option value="054">054</option>
+<option value="055">055</option>
+<option value="061">061</option>
+<option value="062">062</option>
+<option value="063">063</option>
+<option value="064">064</option>
+<option value="0502">0502</option>
+<option value="0505">0505</option>
+<option value="070">070</option>
+</select>
+
+                            </span>
+                            <span class="dash">-</span>
+                            <input type="tel" id="tel2" name="tel2" class="inputTxt" title="일반전화 번호 가운데 3~4자리" maxlength="4">
+                            <span class="dash">-</span>
+                            <input type="tel" id="tel3" name="tel3" class="inputTxt" title="일반전화 번호 끝 4자리" maxlength="4">
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="nmBtnWrap">
+                <button class="btnB" type="button" id="joinBtn"><span>가입하기</span></button>
+            </div>
+            <input type="hidden" id="parentResNum" name="parentResNum">
+            <input type="hidden" id="parentAuthType" name="parentAuthType">
+            <input type="hidden" id="parentCipherTime" name="parentCipherTime">
+        </form>
+    </div>
+</div>
+<script type="text/javascript">
+    $("#birthday").mask("0000-00-00");
+
+    var joinBtn = document.getElementById('joinBtn');
+    EventUtil.addHandler(joinBtn, 'click', function() {
+        if (!validateForm()) {
+            return;
+        }
+
+        var birthday = $("#birthday").val();
+
+        var birthYear = birthday.substring(0, 4);
+        var birthMonth = birthday.substring(5, 7);
+        var birthDate = birthday.substring(8);
+
+        if (ValidationRule.under14(birthYear, birthMonth, birthDate) && !document.getElementById("parentResNum").value) {
+            popRequiredLegalApproval();
+            return;
+        }
+
+        if (!confirm("개인회원으로 가입하시겠습니까?")) {
+            return;
+        }
+
+        join();
+    });
+
+    function validateForm() {
+        var $customerName = $("#customerName");
+        var $cell1 = $("#cell1");
+        var $cell2 = $("#cell2");
+        var $cell3 = $("#cell3");
+        var $birthday = $("#birthday");
+        var $password = $("#password");
+        var $retypePassword = $("#retypePassword");
+        var $tel1 = $("#tel1");
+        var $tel2 = $("#tel2");
+        var $tel3 = $("#tel3");
+
+        if (!validationObj.name($customerName)
+            || !validationObj.cellnumber($cell1, $cell2, $cell3)
+            || !validationObj.birthDay($birthday)
+            || !validationObj.password($password)
+            || !validationObj.retypePassword($password, $retypePassword)
+            || !validationObj.telNumber($tel1, $tel2, $tel3)) {
+            return false;
+        }
+
+        return true;
+
+    }
+
+    function popRequiredLegalApproval() {
+        window.open('/kr/site/customer/popRequiredLegalApproval.do',
+            'popRequiredLegalApproval',
+            'width=600, height=490, top=100, left=100, fullscreen=no, menubar=no, status=no, toolbar=no, titlebar=yes, location=no, scrollbar=no');
+    }
+
+    function approve(resNum, authType, name, cipherTime) {
+        $("#parentResNum").val(resNum);
+        $("#parentAuthType").val(authType);
+        $("#parentCipherTime").val(cipherTime);
+    }
+
+    function join() {
+        var sendJoinRequest = $.ajax({
+            url: "/kr/site/customer/personalJoin.do",
+            data: JSON.stringify($("#customerForm").serializeObject()),
+            contentType: 'application/json',
+            dataType: 'json',
+            type: 'POST'
+        });
+
+        sendJoinRequest.done(function(custSeq) {
+            var entryFinish = {
+                "token": document.getElementsByName('token')[0].value,
+                "custSeq": custSeq
+            };
+
+            PostUtil.post('/kr/site/customer/personalEntryFinish.do', entryFinish);
+        });
+
+        sendJoinRequest.fail(function(res) {
+            if (res.responseJSON.code === "ET03") {
+                alert('인증 유효 시간이 지났습니다. 다시 인증해 주세요.');
+            } else if (res.responseJSON.code === "EC01" || res.responseJSON.code === "ET04" || res.responseJSON.code === "EB01" || res.responseJSON.code === "EE01") {
+                alert('올바르지 않은 회원가입 요청입니다.');
+            } else  {
+                alert('죄송합니다. 일시적인 오류가 발생하여 이용할 수 없습니다.');
+            }
+        });
+    }
+
+    var validationObj = {
+        name: function($customerName) {
+            if (!$customerName.val() || $customerName.val().trim() == "") {
+                alert("이름을 확인해주세요.");
+                $customerName.focus();
+                return false;
+            }
+
+            if(!ValidationRule.custName($customerName.val())){
+                alert("이름에는 숫자/특수문자를 사용할 수 없습니다.");
+                $customerName.focus();
+                return false;
+            }
+
+            return true;
+        },
+        cellnumber: function($cell1, $cell2, $cell3) {
+            if ($cell1.prop('disabled') && $cell2.prop('disabled') && $cell3.prop('disabled')) {
+                return true;
+            }
+
+            if (!$cell1.val() || !$cell2.val() || !$cell3.val()) {
+                alert("휴대전화 번호를 확인해주세요.");
+                return false;
+            }
+
+            if (!ValidationRule.telServiceNumber($cell1.val())) {
+                alert("휴대전화 번호를 확인해주세요.");
+                return false;
+            }
+
+            if (!ValidationRule.telNumber($cell1.val()+$cell2.val()+$cell3.val())) {
+                alert("휴대전화 번호를 확인해주세요.");
+                return false;
+            }
+            return true;
+        },
+        birthDay: function($birthday) {
+            if (!$birthday.val()) {
+                alert("생년월일을 확인해주세요.");
+                $birthday.focus();
+                return false;
+            }
+
+            var birthYear = $birthday.val().substring(0, 4);
+            var birthMonth = $birthday.val().substring(5, 7);
+            var birthDate = $birthday.val().substring(8);
+
+            if(!ValidationRule.birth(birthYear, birthMonth, birthDate)){
+                alert("생년월일을 확인해주세요.");
+                $birthday.focus();
+                return false
+            }
+
+            return true;
+        },
+        password: function($password) {
+            if (!$password.val()) {
+                alert("비밀번호를 확인해주세요.");
+                $password.focus();
+                return false;
+            }
+
+            if (!ValidationRule.password($password.val())) {
+                alert("비밀번호를 확인해주세요.");
+                $password.focus();
+                return false;
+            }
+
+            return true;
+
+        },
+        retypePassword: function($password, $retypePassword) {
+            if (!$retypePassword.val()) {
+                alert("비밀번호가 일치하지 않습니다.");
+                $retypePassword.focus();
+                return false;
+            }
+
+            if ($password.val() !== $retypePassword.val()) {
+                alert("비밀번호가 일치하지 않습니다.");
+                $retypePassword.focus();
+                return false;
+            }
+
+            return true;
+        },
+        telNumber: function($tel1, $tel2, $tel3) {
+            var tel1 = $tel1.val();
+            var tel2 = $tel2.val();
+            var tel3 = $tel3.val();
+
+            if (!tel1 && !tel2 && !tel3) {
+                return true;
+            }
+
+            if (!tel1 || !tel2 || !tel3) {
+                alert("전화번호를 확인해주세요.");
+                return false;
+            }
+
+            if (!ValidationRule.telNumber(tel1 + tel2 + tel3)) {
+                alert("전화번호를 확인해주세요.");
+                return false;
+            }
+
+            return true;
+        }
+    };
+
+    var eventObj = {
+        togglePasswordMsg: function(e) {
+            var value = e.target.value;
+            var $safeMessage = $("#safePasswordMsg");
+            var $normalMessage = $("#normalPasswordMsg");
+            var $dangerMessage = $("#dangerPasswordMsg");
+
+            $(".nmAlertIco").hide();
+
+            if(!ValidationRule.password(value)) {
+                $dangerMessage.show();
+                return;
+            }
+
+            if(ValidationRule.safetyPassword(value)){
+                $safeMessage.show();
+                return
+            }
+
+            $normalMessage.show();
+        },
+        toggleRetypeErrMsg: function(e) {
+            var value = e.target.value;
+            var $password = $("#password");
+            var $retypeErrMessage = $("#retypeErrMessage");
+
+            if(value !== $password.val()){
+                $retypeErrMessage.show();
+            }else{
+                $retypeErrMessage.hide();
+            }
+        },
+        disableCellNumberInput: function(e){
+            var $cellNumberInput = $("[id^=cell]");
+
+            if (e.target.checked) {
+                $cellNumberInput.prop('disabled', true);
+                $cellNumberInput.closest(".select").addClass("disabled");
+                $cellNumberInput.val('');
+            }else {
+                $cellNumberInput.prop('disabled', false);
+                $cellNumberInput.closest(".select").removeClass("disabled");
+            }
+        },
+        popupSafePasswordInfo: function(){
+            window.open('/kr/site/customer/popSafePw.do', 'safePw', 'scrollbars=yes, toolbar=no, menubar=no, status=no, width=462, height=520');
+        }
+    }
+</script>
+
+        
+    </div>
+  <!-- MDB -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.2.0/mdb.min.js"></script>
+<script>includeHTML();</script>
+</body>
